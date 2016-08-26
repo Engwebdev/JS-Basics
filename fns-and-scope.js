@@ -4,7 +4,12 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-  //Code Here
+function isTyler(param) { debugger;
+  if (param === name) {
+    return true;
+  }
+  return false;
+}  //Code Here
 
 //////////////////PROBLEM 2////////////////////
 
@@ -12,7 +17,10 @@ var name = 'Tyler';
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  //Code Here
+function getName() {
+  var name = prompt("What is your first name?");
+  return name;
+}  //Code Here
 
 
 //////////////////PROBLEM 3////////////////////
@@ -22,8 +30,10 @@ var name = 'Tyler';
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
-
+function welcome() {
+  var getNamefn = getName();
+  alert("Welcome, " + getNamefn);
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -31,8 +41,8 @@ var name = 'Tyler';
 
 
 //What is the difference between arguments and parameters?
-
-  //Answer Here
+//
+// Paramaters are the function specific variables used to name the values that will be passed to them, Arguments are the actual values passed into functions.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -42,7 +52,7 @@ var name = 'Tyler';
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+//0, '', false, NaN, Null, Undefined.  if (*arguement* == 0)?
 
 
 
@@ -53,16 +63,18 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
 
+function myName( ) {
+  return "Shea"
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var myNewName = myName;  //Code Here
 
 //Now alert the result of invoking newMyName
 
-
+//alert(myNewName());
 
 //////////////////PROBLEM 7////////////////////
 

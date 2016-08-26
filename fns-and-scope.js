@@ -4,7 +4,7 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-function isTyler(param) { debugger;
+function isTyler(param) {
   if (param === name) {
     return true;
   }
@@ -31,8 +31,7 @@ function getName() {
 //then alerts "Welcome, " plus whatever the users name is.
 
 function welcome() {
-  var getNamefn = getName();
-  alert("Welcome, " + getNamefn);
+  alert("Welcome, " + getName());
 }
 
 //////////////////PROBLEM 4////////////////////
@@ -74,7 +73,7 @@ var myNewName = myName;  //Code Here
 
 //Now alert the result of invoking newMyName
 
-//alert(myNewName());
+alert(myNewName());
 
 //////////////////PROBLEM 7////////////////////
 
@@ -82,10 +81,15 @@ var myNewName = myName;  //Code Here
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+function outerFn() {
+  return function() {
+    return "Shea";
+  };
+}  //Code Here
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+var innerFn = outerFn();  //Code Here
 
 //Now invoke innerFn.
+innerFn();
